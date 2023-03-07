@@ -1,0 +1,97 @@
+.container {
+  max-width: 120rem;
+  margin: 8rem auto;
+  background-color: var(--greyLight1);
+  box-shadow: var(--shadowDark);
+
+  min-height: 50rem;
+
+  @media only screen and (max-width: $breakpoint-xlg) {
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.header {
+  font-size: 1.4rem;
+  height: 7rem;
+  background-color: #fff;
+  border-bottom: var(--line);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media only screen and (max-width: $breakpoint-xsm) {
+    flex-wrap: wrap;
+    align-content: space-around;
+    height: 11rem;
+  }
+}
+
+.content {
+  display: flex;
+
+  @media only screen and (max-width: $breakpoint-md) {
+    flex-direction: column;
+  }
+}
+
+.sidebar {
+  background-color: var(--greyDark1);
+
+  flex: 0 0 18%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hotel-view {
+  background-color: #fff;
+
+  flex: 1;
+}
+
+.detail {
+  font-size: 1.4rem;
+  display: flex;
+  padding: 4.5rem;
+  background-color: var(--greyLight1);
+  border-bottom: var(--line);
+
+  @media only screen and (max-width: $breakpoint-md) {
+    padding: 3rem;
+  }
+
+  @media only screen and (max-width: $breakpoint-sm) {
+    flex-direction: column;
+  }
+}
+
+.description {
+  background-color: #fff;
+  box-shadow: var(--shadowLight);
+  padding: 3rem;
+  flex: 0 0 60%;
+  margin-right: 4.5rem;
+
+  @media only screen and (max-width: $breakpoint-md) {
+    padding: 2rem;
+    margin-right: 3rem;
+  }
+
+  @media only screen and (max-width: $breakpoint-sm) {
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
+}
+
+.user-reviews {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
